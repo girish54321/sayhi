@@ -56,8 +56,9 @@ dev_dependencies:
 # The following section is specific to Flutter.
 
 flutter_icons:
-  image_path: "assets/raising_hand.png"
-  android: true
+  # image_path: "assets/raising_hand.png"
+  image_path: "assets/raising_hand_ios.jpg"
+  android: false
   ios: true
   adaptive_icon_background: "#ffffff"
 
@@ -71,6 +72,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/raising_hand.png
+    - assets/raising_hand_ios.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
