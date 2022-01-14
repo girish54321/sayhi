@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   TextEditingController controller = TextEditingController();
   late TextEditingController telegramController;
+  late TextEditingController emailontroller;
   String initialCountry = 'IN';
   String code = "+91";
   PhoneNumber number = PhoneNumber(isoCode: 'IN');
@@ -31,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     telegramController = TextEditingController();
+    emailontroller = TextEditingController();
     super.initState();
   }
 
@@ -68,17 +70,29 @@ class _HomeScreenState extends State<HomeScreen> {
         final userName = await showDialog(
             context: context,
             builder: (context) {
+              final _formTelegram = GlobalKey<FormState>();
               return AlertDialog(
                 title: const Text("Enter Telegram username"),
-                content: TextField(
-                  controller: telegramController,
-                  autofocus: true,
-                  decoration: const InputDecoration(hintText: "Username"),
+                content: Form(
+                  key: _formTelegram,
+                  child: TextFormField(
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter Telegram username';
+                      }
+                      return null;
+                    },
+                    controller: telegramController,
+                    autofocus: true,
+                    decoration: const InputDecoration(hintText: "Username"),
+                  ),
                 ),
                 actions: [
                   TextButton(
                       onPressed: () {
-                        Navigator.of(context).pop(telegramController.text);
+                        if (_formTelegram.currentState!.validate()) {
+                          Navigator.of(context).pop(telegramController.text);
+                        }
                       },
                       child: const Text("Hi"))
                 ],
@@ -126,24 +140,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         teligarmButton()
                       ],
                     ),
-                  ),
-                  const Divider(),
-                  const Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Icon(
-                      FontAwesomeIcons.at,
-                      size: 33,
-                    ),
-                  ),
-                  TextFormField(
-                    decoration: const InputDecoration(
-                        hintText: "Send Email to ..",
-                        prefixIcon: Icon(Icons.mail),
-                        suffixIcon: Icon(Icons.close)),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 28.0),
-                    child: signalButton(),
                   ),
                 ],
               ),
