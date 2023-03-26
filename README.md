@@ -1,16 +1,29 @@
-# sayhi
+# Say Hi
 
-A new Flutter project.
+Say Hi is an open source mobile application built with Flutter that allows users to connect on WhatsApp and Telegram without the need to save the number beforehand.
+
+## Features
+
+- Connect on WhatsApp and Telegram without saving the number
+- Dark and light mode support
+- Simple and easy-to-use interface
+
+## Screenshots
+
+<img src="say_hi_banner.png" height="400">
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with Say Hi, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone this repository.
+2. Run `flutter packages get` to install the required dependencies.
+3. Run the app using `flutter run`.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Contributing
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you'd like to contribute to Say Hi, please fork the repository and make changes as you'd like. Pull requests are welcome!
+
+## License
+
+Say Hi is licensed under the [MIT License](LICENSE).
