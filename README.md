@@ -10,7 +10,7 @@ Say Hi is an open source mobile application built with Flutter that allows users
 
 ## Screenshots
 
-<img src="say_hi_banner.png" height="400">
+<img src="say_hi_banner.png" >
 
 ## Getting Started
 
