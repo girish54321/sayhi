@@ -1,0 +1,1 @@
+Say Hi is an open source mobile application built with Flutter that allows users to connect on WhatsApp and Telegram without the need to save the number beforehand.

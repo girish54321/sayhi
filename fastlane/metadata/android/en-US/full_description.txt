@@ -1,0 +1,15 @@
+Say Hi
+
+Say Hi is an open source mobile application built with Flutter that allows users to connect on WhatsApp and Telegram without the need to save the number beforehand.
+
+Features
+
+- Connect on WhatsApp and Telegram without saving the number
+- Dark and light mode support
+- Simple and easy-to-use interface
+
+Source Code:
+
+The source code is available at the following GitHub repository:
+[https://github.com/girish54321/sayhi]
+
