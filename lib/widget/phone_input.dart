@@ -18,24 +18,19 @@ class PhoneInput extends StatelessWidget {
       autoFocus: true,
       hintText: "Say Hii to ..",
       onInputChanged: setCode,
-      onInputValidated: (bool value) {
-        print(value);
-      },
+      onInputValidated: (bool value) {},
       selectorConfig: const SelectorConfig(
         selectorType: PhoneInputSelectorType.BOTTOM_SHEET,
       ),
       ignoreBlank: false,
       autoValidateMode: AutovalidateMode.disabled,
-      selectorTextStyle: const TextStyle(color: Colors.black),
       initialValue: number,
       textFieldController: textEditingController,
       formatInput: false,
       keyboardType:
           const TextInputType.numberWithOptions(signed: true, decimal: true),
       inputBorder: const OutlineInputBorder(),
-      onSaved: (PhoneNumber number) {
-        print('On Saved: $number');
-      },
+      onSaved: (PhoneNumber number) {},
     );
   }
 }

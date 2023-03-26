@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget teligarmButton() {
+  Widget telegramButton() {
     return AppButton(
       function: () async {
         final userName = await showDialog(
@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Navigator.of(context).pop(telegramController.text);
                         }
                       },
-                      child: const Text("Hi"))
+                      child: const Text("Say Hi"))
                 ],
               );
             });
@@ -137,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         whatsAppbutton(),
                         signalButton(),
-                        teligarmButton()
+                        telegramButton()
                       ],
                     ),
                   ),
