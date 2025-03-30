@@ -1,4 +1,4 @@
-package com.example.say_hi
+package com.example.sayhi
 
 import io.flutter.embedding.android.FlutterActivity
 
