@@ -7,8 +7,9 @@ import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity: FlutterActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        installSplashScreen()
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        val splashScreen = installSplashScreen()
+        super.onCreate(savedInstanceState, persistentState)
+        setTheme(R.style.NormalTheme)
     }
 }
