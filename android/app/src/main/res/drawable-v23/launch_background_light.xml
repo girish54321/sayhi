@@ -4,7 +4,7 @@
     <item android:gravity="center" android:drawable="@drawable/avd_anim" />
     <item
         android:width="200dp"
-        android:height="80dp"
-        android:drawable="@drawable/branding_light"
-        android:gravity="center|bottom"/>
+    android:height="80dp"
+    android:drawable="@drawable/branding_light"
+    android:gravity="center|bottom"/>
 </layer-list>

@@ -4,9 +4,7 @@
     <style name="LaunchTheme" parent="Theme.SplashScreen">
         <!-- Show a splash screen on the activity. Automatically removed when
              Flutter draws its first frame -->
-            <item name="windowSplashScreenBackground">#FFFFFF</item>
-            <item name="windowSplashScreenAnimatedIcon">@drawable/android_splash</item>
-            <item name="postSplashScreenTheme">@android:style/Theme.Light.NoTitleBar</item>
+        <item name="android:windowBackground">@drawable/launch_background_light</item>
     </style>
     <!-- Theme applied to the Android Window as soon as the process has started.
          This theme determines the color of the Android Window while your
