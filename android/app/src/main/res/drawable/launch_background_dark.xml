@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/splash_screen_background_color" />
-    <item android:gravity="center" android:drawable="@drawable/avd_anim" />
+    <item android:gravity="center" android:drawable="@drawable/animated_splash_icon_dark_mode" />
     <item
         android:width="200dp"
         android:height="80dp"
-        android:drawable="@drawable/branding_light"
+        android:drawable="@drawable/branding_image_light_mode"
         android:gravity="center|bottom"/>
 </layer-list>
