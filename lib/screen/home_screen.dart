@@ -136,8 +136,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       spacing: 16,
                       children: [
                         whatsAppbutton(),
-                        signalButton(),
-                        telegramButton()
+                        // signalButton(),
+                        // telegramButton()
                       ],
                     ),
                   ),
